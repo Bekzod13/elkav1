@@ -28,7 +28,6 @@ const Map = () => {
             positionOptions: {
                 enableHighAccuracy: false,
             },
-            // watch: true,
             watchPosition: true,
             userDecisionTimeout: 10000,
             watchLocationPermissionChange: false,
@@ -49,7 +48,7 @@ const Map = () => {
                 },
                 {
                     enableHighAccuracy: true,
-                    distanceFilter: 100,
+                    distanceFilter: 10,
                 }
             );
             return () => {

@@ -1,6 +1,7 @@
 import './App.css'
 import {Route, Routes} from "react-router-dom";
 import Main from "./pages/Main.jsx";
+import Bar from "./components/Bar.jsx";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
         <Routes>
             <Route path={'/'} element={<Main/>} />
         </Routes>
+        <Bar/>
     </>
   )
 }
