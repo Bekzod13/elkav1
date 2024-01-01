@@ -74,7 +74,7 @@ const initMap = async (lat, long, stations) => {
         {
             location: {
                 center: [long, lat - 0.004],
-                zoom: 13.5
+                zoom: 15
             }
         }
     );
