@@ -1,5 +1,5 @@
-.placeMark{
-    border: 1px solid var(--white);
+.placeMark {
+    border: 1px solid rgba(055, 255, 055, 0.3);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -10,7 +10,7 @@
 }
 
 .placeMark::after,
-.placeMark::before{
+.placeMark::before {
     content: '';
     display: flex;
     position: absolute;
@@ -20,25 +20,27 @@
     height: 60px;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 1px solid var(--white);
-    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--green);
+    background: rgba(155, 255, 155, 0.1);
+    opacity: .6;
 }
-.placeMark::after{
+
+.placeMark::after {
     animation: animate 3s infinite linear;
 }
+
 .placeMark::before {
     animation: animate 3s infinite 1.5s linear;
 }
 
 @keyframes animate {
-    0%{
+    0% {
         width: 60px;
         height: 60px;
     }
-    100%{
+    100% {
         width: 260px;
         height: 260px;
         opacity: .1;
     }
-
 }

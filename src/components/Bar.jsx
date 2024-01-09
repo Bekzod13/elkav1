@@ -9,7 +9,7 @@ const Bar = () => {
         <Link to={'/'} >
             <BsLightningChargeFill />
         </Link>
-        <Link to={'/'} >
+        <Link to={'/'} style={{fontSize: '32px'}} >
             <RiMenuSearchLine />
         </Link>
         <Link to={'/'} >
